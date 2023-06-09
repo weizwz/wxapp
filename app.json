@@ -2,10 +2,11 @@
   "pages": [
     "pages/home/home",
     "pages/category/index",
-    "pages/user/index"
+    "pages/user/index",
+    "custom-tab-bar/index"
   ],
   "tabBar": {
-    "custom": false,
+    "custom": true,
     "color": "#666666",
     "selectedColor": "#1096ff",
     "backgroundColor": "#ffffff",

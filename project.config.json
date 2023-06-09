@@ -50,11 +50,10 @@
     "tabIndent": "insertSpaces",
     "tabSize": 2
   },
-  "style": "v2",
   "packNpmRelationList": [
     {
       "packageJsonPath": "./package.json",
-      "miniprogramNpmDistDir": "./miniprogram/"
+      "miniprogramNpmDistDir": "./"
     }
   ]
 }
