@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "'微信小程序常用组件示例'",
   "main": ".eslintrc.js",
-  "dependencies": {
-    "tdesign-miniprogram": "^1.1.8"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

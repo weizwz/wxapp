@@ -5,9 +5,9 @@
     "pages/user/index"
   ],
   "tabBar": {
-    "custom": true,
+    "custom": false,
     "color": "#666666",
-    "selectedColor": "#FF5F15",
+    "selectedColor": "#1096ff",
     "backgroundColor": "#ffffff",
     "borderStyle": "black",
     "list": [
