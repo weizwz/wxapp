@@ -38,6 +38,7 @@ Component({
         (item.pagePath.startsWith('/') ? item.pagePath.substr(1) : item.pagePath) ===
         `${route}`,
       );
+      console.log(active);
       this.setData({ active });
     },
   }

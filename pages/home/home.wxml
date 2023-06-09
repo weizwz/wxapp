@@ -1,8 +1,19 @@
 <!--pages/home/home.wxml-->
 <t-navbar>
   <view slot="left" class="home-nav">
-    <t-image t-class="custom-image" src="/asset/image/wzlogo.png" aria-label="导航栏图片" />
+    <t-image t-class="custom-image" src="/asset/image/wzlogo.png" aria-label="导航栏图片"/>
     <t-search t-class-input="t-search__input" t-class-input-container="t-search__input-container" placeholder="搜索" shape="round" model:value="{{value}}" bind:change="onChange" />
   </view>
 </t-navbar>
-<text>pages/home/home.wxml</text>
+<view class="main">
+  <t-swiper
+    wx:if="{{banner.swiperList.length > 0}}"
+    current="{{banner.current}}"
+    autoplay="{{banner.autoplay}}"
+    duration="{{banner.duration}}"
+    interval="{{banner.interval}}"
+    list="{{banner.swiperList}}"
+    navigation="{{ { type: 'dots-bar' } }}"
+  />
+  <text>pages/home/home.wxml</text>
+</view>
