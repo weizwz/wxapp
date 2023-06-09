@@ -1,2 +1,8 @@
 <!--pages/home/home.wxml-->
+<t-navbar>
+  <view slot="left" class="home-nav">
+    <t-image t-class="custom-image" src="/asset/image/wzlogo.png" aria-label="导航栏图片" />
+    <t-search t-class-input="t-search__input" t-class-input-container="t-search__input-container" placeholder="搜索" shape="round" model:value="{{value}}" bind:change="onChange" />
+  </view>
+</t-navbar>
 <text>pages/home/home.wxml</text>

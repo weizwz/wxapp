@@ -1,1 +1,16 @@
 /* pages/home/home.wxss */
+.home-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.custom-image {
+  height: 32px;
+  width: 105px;
+  margin-right: 10rpx;
+}
+.home-nav .t-search__input-container {
+  margin-right: 10rpx;
+  flex: 0 1 auto;
+  height: 60rpx;
+}
