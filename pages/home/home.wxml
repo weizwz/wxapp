@@ -15,5 +15,21 @@
     list="{{banner.swiperList}}"
     navigation="{{ { type: 'dots-bar' } }}"
   />
+  <view class="home-page-container">
+    <view class="home-page-tabs">
+      <t-tabs
+        defaultValue="{{0}}"
+        space-evenly="{{false}}"
+        bind:change="onTabsChange"
+        t-class="custom-tabs"
+      >
+        <t-tab-panel label="卡片列表" value="0" />
+        <t-tab-panel label="界面布局" value="1" />
+        <t-tab-panel label="按钮示例" value="2" />
+        <t-tab-panel label="多项图标" value="3" />
+        <t-tab-panel label="输入框" value="4" />
+      </t-tabs>
+    </view>
+  </view>
   <text>pages/home/home.wxml</text>
 </view>

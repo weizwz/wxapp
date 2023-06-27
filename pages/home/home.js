@@ -31,12 +31,15 @@ Page({
       duration: 500,
       interval: 5000,
       swiperList,
-    }
+    },
+    stickyProps: {
+      zIndex: 2,
+    },
   },
   methods: {
     onChange(e) {
       console.log(e.detail.value);
-    },
+    }
   },
 
   /**
@@ -93,5 +96,11 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+
+  
+  // 选项卡
+  onTabsChange(event) {
+    console.log(event.detail.value);
   }
 })
