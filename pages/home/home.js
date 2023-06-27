@@ -32,9 +32,7 @@ Page({
       interval: 5000,
       swiperList,
     },
-    stickyProps: {
-      zIndex: 2,
-    },
+    tabList: [],
   },
   methods: {
     onChange(e) {
@@ -46,7 +44,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.loadHomePage();
   },
 
   /**
@@ -98,9 +96,20 @@ Page({
 
   },
 
-  
+  loadHomePage() {
+    const that = this;
+    wx.request({
+      url: 'https://example.com/home/tablist',
+      dataType: 'json',
+      success(res) {
+        that.setData({
+          tabList: res.data
+        })
+      }
+    })
+  },
   // 选项卡
   onTabsChange(event) {
-    console.log(event.detail.value);
+    // console.log(event.detail.value);
   }
 })

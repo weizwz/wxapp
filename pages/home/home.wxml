@@ -18,16 +18,18 @@
   <view class="home-page-container">
     <view class="home-page-tabs">
       <t-tabs
-        defaultValue="{{0}}"
+        value="{{tabList[0].key}}"
         space-evenly="{{false}}"
         bind:change="onTabsChange"
         t-class="custom-tabs"
       >
-        <t-tab-panel label="卡片列表" value="0" />
-        <t-tab-panel label="界面布局" value="1" />
-        <t-tab-panel label="按钮示例" value="2" />
-        <t-tab-panel label="多项图标" value="3" />
-        <t-tab-panel label="输入框" value="4" />
+        <t-tab-panel
+          wx:for="{{tabList}}"
+          wx:for-index="index"
+          wx:key="index"
+          label="{{item.name}}"
+          value="{{item.key}}"
+        />
       </t-tabs>
     </view>
   </view>
