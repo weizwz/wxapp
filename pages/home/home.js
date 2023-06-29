@@ -1,22 +1,9 @@
 // pages/home/home.js
-const imageCdn = 'https://tdesign.gtimg.com/miniprogram/images';
+const imageCdn = '../../asset/image';
 const swiperList = [
-  {
-    value: `${imageCdn}/swiper1.png`,
-    ariaLabel: '图片1',
-  },
-  {
-    value: `${imageCdn}/swiper2.png`,
-    ariaLabel: '图片2',
-  },
-  {
-    value: `${imageCdn}/swiper1.png`,
-    ariaLabel: '图片1',
-  },
-  {
-    value: `${imageCdn}/swiper2.png`,
-    ariaLabel: '图片2',
-  },
+    `${imageCdn}/nav1.png`,
+    `${imageCdn}/nav2.png`,
+    `${imageCdn}/nav3.png`,
 ];
 
 import { fetchHomeNav } from '../../services/home/home';
