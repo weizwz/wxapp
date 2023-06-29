@@ -19,6 +19,8 @@ const swiperList = [
   },
 ];
 
+import { fetchHomeNav } from '../../services/home/home';
+
 Page({
   /**
    * 页面的初始数据
@@ -98,14 +100,10 @@ Page({
 
   loadHomePage() {
     const that = this;
-    wx.request({
-      url: 'https://example.com/home/tablist',
-      dataType: 'json',
-      success(res) {
-        that.setData({
-          tabList: res.data
-        })
-      }
+    fetchHomeNav().then((data) => {
+      that.setData({
+        tabList: data
+      })
     })
   },
   // 选项卡
