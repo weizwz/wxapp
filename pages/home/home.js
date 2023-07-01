@@ -1,9 +1,9 @@
 // pages/home/home.js
-const imageCdn = '../../asset/image';
+const imageCdn = '/asset/image';
 const swiperList = [
-    `${imageCdn}/nav1.png`,
-    `${imageCdn}/nav2.png`,
-    `${imageCdn}/nav3.png`,
+    `${imageCdn}/nav1.jpg`,
+    `${imageCdn}/nav2.jpg`,
+    `${imageCdn}/nav3.jpg`,
 ];
 
 import { fetchHomeNav } from '../../services/home/home';
@@ -19,7 +19,7 @@ Page({
       autoplay: true,
       duration: 500,
       interval: 5000,
-      swiperList,
+      swiperList: swiperList,
     },
     tabList: [],
   },
